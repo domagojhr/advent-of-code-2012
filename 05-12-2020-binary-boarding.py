@@ -1,4 +1,4 @@
-bpass = ['BBFFFBBLLR', 'BBFFFFFLRL', 'BFBFFFBLRR', 'FBBFFFFRLL', 'FFBFFFBLRR', 'BFBBBFFLLL', 'BFBBBFFLRR', 'FBBFBBFRLL', 'BFFBFBBLLL', 'BFBFBBFRRR', 'FBFBFFBLLR', 'FFFBBBFRLL', 'BFBBFBBRRR', 'FBFFBFBRRR', 'BFFBFFFLLL', 'FBBBFBFLRR', 'BFBBFBFRLR', 'BFFFFFBRRL', 'BFFBFFFRLR', 'FBBBBBFRLL']
+example = ['BBFFFBBLLR', 'BBFFFFFLRL', 'BFBFFFBLRR', 'FBBFFFFRLL', 'FFBFFFBLRR', 'BFBBBFFLLL', 'BFBBBFFLRR', 'FBBFBBFRLL', 'BFFBFBBLLL', 'BFBFBBFRRR', 'FBFBFFBLLR', 'FFFBBBFRLL', 'BFBBFBBRRR', 'FBFFBFBRRR', 'BFFBFFFLLL', 'FBBBFBFLRR', 'BFBBFBFRLR', 'BFFFFFBRRL', 'BFFBFFFRLR', 'FBBBBBFRLL']
 
 def resolveBoardPass(i,rows,columns):
     resolved = []
@@ -45,5 +45,5 @@ def detectMissingSeat(l):
         if(abs(l[i][3] - l[i-1][3])>1 and i > 1 and i < len(l)-1):
             return(l[i][3]+1)
 
-print(getHighestID(resolveBoardPass(bpass,128,8)))
-#print(detectMissingSeat(resolveBoardPass(bpass,128,8)))
+print("Highest id:",getHighestID(resolveBoardPass(example,128,8)))
+#print("Missing seat id:",detectMissingSeat(resolveBoardPass(example,128,8)))
