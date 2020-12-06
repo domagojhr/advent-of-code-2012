@@ -1,3 +1,5 @@
+#Task https://adventofcode.com/2020/day/6
+
 example='''abc
 
 a
