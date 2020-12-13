@@ -18,8 +18,6 @@ def parseInput(i):
         inputArray.append(line)
     return( inputArray)
 
-donePositions = []
-
 def returnNextStep(command,accumulator,position,donePositions):
     if(position in donePositions):
         return [accumulator,False,donePositions]
