@@ -1,3 +1,5 @@
+#Task https://adventofcode.com/2020/day/7
+
 import re
 
 Input = '''light red bags contain 1 bright white bag, 2 muted yellow bags.
