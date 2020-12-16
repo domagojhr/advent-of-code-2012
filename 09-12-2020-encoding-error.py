@@ -1,4 +1,4 @@
-import numpy as np
+#Task https://adventofcode.com/2020/day/9
 
 Input="""35
 20
